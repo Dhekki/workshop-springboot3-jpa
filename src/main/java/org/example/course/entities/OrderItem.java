@@ -3,7 +3,6 @@ package org.example.course.entities;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.EmbeddedId;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import org.example.course.entities.pk.OrderItemPK;
 
