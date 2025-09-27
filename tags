@@ -57,7 +57,7 @@
 !_TAG_ROLE_DESCRIPTION!Maven2!groupId	parent	/parent/
 339dG9hRm2vRKjvaDNnzZ7YWxnD	.idea/workspace.xml	/^  <component name="ProjectId" id="339dG9hRm2vRKjvaDNnzZ7YWxnD" \/>$/;"	i
 560ff091-3fb7-4fe5-846d-39cfdff1688c	.idea/workspace.xml	/^      <changelist id="560ff091-3fb7-4fe5-846d-39cfdff1688c" name="Changes" comment="" \/>$/;"	i
-560ff091-3fb7-4fe5-846d-39cfdff1688c	.idea/workspace.xml	/^    <list default="true" id="560ff091-3fb7-4fe5-846d-39cfdff1688c" name="Changes" comment="">$/;"	i
+560ff091-3fb7-4fe5-846d-39cfdff1688c	.idea/workspace.xml	/^    <list default="true" id="560ff091-3fb7-4fe5-846d-39cfdff1688c" name="Changes" comment="" \/>$/;"	i
 Add	.idea/workspace.xml	/^    <ConfirmationsSetting value="1" id="Add" \/>$/;"	i
 CANCELED	src/main/java/org/example/course/entities/enums/OrderStatus.java	/^    CANCELED(5);$/;"	e	enum:OrderStatus	file:
 Category	src/main/java/org/example/course/entities/Category.java	/^    public Category() {$/;"	m	class:Category
@@ -84,6 +84,9 @@ OrderService	src/main/java/org/example/course/services/OrderService.java	/^publi
 OrderStatus	src/main/java/org/example/course/entities/enums/OrderStatus.java	/^    private OrderStatus(int code) {$/;"	m	class:OrderStatus	file:
 OrderStatus	src/main/java/org/example/course/entities/enums/OrderStatus.java	/^public enum OrderStatus {$/;"	g
 PAID	src/main/java/org/example/course/entities/enums/OrderStatus.java	/^    PAID(2),$/;"	e	enum:OrderStatus	file:
+Payment	src/main/java/org/example/course/entities/Payment.java	/^    public Payment() {$/;"	m	class:Payment
+Payment	src/main/java/org/example/course/entities/Payment.java	/^    public Payment(Long id, Instant moment, Order order) {$/;"	m	class:Payment
+Payment	src/main/java/org/example/course/entities/Payment.java	/^public class Payment implements Serializable {$/;"	c
 Product	src/main/java/org/example/course/entities/Product.java	/^    public Product() {$/;"	m	class:Product
 Product	src/main/java/org/example/course/entities/Product.java	/^    public Product(Long id, String name, String description, Double price, String imgUrl) {$/;"	m	class:Product
 Product	src/main/java/org/example/course/entities/Product.java	/^public class Product implements Serializable {$/;"	c
@@ -106,6 +109,8 @@ client	src/main/java/org/example/course/entities/Order.java	/^    private User c
 code	src/main/java/org/example/course/entities/enums/OrderStatus.java	/^    private int code;$/;"	f	class:OrderStatus	file:
 contextLoads	src/test/java/org/example/course/CourseApplicationTests.java	/^    void contextLoads() {$/;"	m	class:CourseApplicationTests
 course	pom.xml	/^    <artifactId>course<\/artifactId>$/;"	a	groupId:org.example
+delete	src/main/java/org/example/course/resources/UserResource.java	/^    public ResponseEntity<Void> delete(@PathVariable Long id) {$/;"	m	class:UserResource
+delete	src/main/java/org/example/course/services/UserService.java	/^    public void delete(Long id) {$/;"	m	class:UserService
 description	src/main/java/org/example/course/entities/Product.java	/^    private String description;$/;"	f	class:Product	file:
 distributionType	.mvn/wrapper/maven-wrapper.properties	/^distributionType=only-script$/;"	k
 distributionUrl	.mvn/wrapper/maven-wrapper.properties	/^distributionUrl=https:\/\/repo.maven.apache.org\/maven2\/org\/apache\/maven\/apache-maven\/3.9.1/;"	k
@@ -113,6 +118,7 @@ email	src/main/java/org/example/course/entities/User.java	/^    private String e
 equals	src/main/java/org/example/course/entities/Category.java	/^    public boolean equals(Object o) {$/;"	m	class:Category
 equals	src/main/java/org/example/course/entities/Order.java	/^    public boolean equals(Object o) {$/;"	m	class:Order
 equals	src/main/java/org/example/course/entities/OrderItem.java	/^    public boolean equals(Object o) {$/;"	m	class:OrderItem
+equals	src/main/java/org/example/course/entities/Payment.java	/^    public boolean equals(Object o) {$/;"	m	class:Payment
 equals	src/main/java/org/example/course/entities/Product.java	/^    public boolean equals(Object o) {$/;"	m	class:Product
 equals	src/main/java/org/example/course/entities/User.java	/^    public boolean equals(Object o) {$/;"	m	class:User
 equals	src/main/java/org/example/course/entities/pk/OrderItemPK.java	/^    public boolean equals(Object o) {$/;"	m	class:OrderItemPK
@@ -124,10 +130,10 @@ findAll	src/main/java/org/example/course/services/CategoryService.java	/^    pub
 findAll	src/main/java/org/example/course/services/OrderService.java	/^    public List<Order> findAll() {$/;"	m	class:OrderService
 findAll	src/main/java/org/example/course/services/ProductService.java	/^    public List<Product> findAll() {$/;"	m	class:ProductService
 findAll	src/main/java/org/example/course/services/UserService.java	/^    public List<User> findAll() {$/;"	m	class:UserService
-findById	src/main/java/org/example/course/resources/CategoryResource.java	/^    public ResponseEntity<Category> findById(@PathVariable long id) {$/;"	m	class:CategoryResource
-findById	src/main/java/org/example/course/resources/OrderResource.java	/^    public ResponseEntity<Order> findById(@PathVariable long id) {$/;"	m	class:OrderResource
-findById	src/main/java/org/example/course/resources/ProductResource.java	/^    public ResponseEntity<Product> findById(@PathVariable long id) {$/;"	m	class:ProductResource
-findById	src/main/java/org/example/course/resources/UserResource.java	/^    public ResponseEntity<User> findById(@PathVariable long id) {$/;"	m	class:UserResource
+findById	src/main/java/org/example/course/resources/CategoryResource.java	/^    public ResponseEntity<Category> findById(@PathVariable Long id) {$/;"	m	class:CategoryResource
+findById	src/main/java/org/example/course/resources/OrderResource.java	/^    public ResponseEntity<Order> findById(@PathVariable Long id) {$/;"	m	class:OrderResource
+findById	src/main/java/org/example/course/resources/ProductResource.java	/^    public ResponseEntity<Product> findById(@PathVariable Long id) {$/;"	m	class:ProductResource
+findById	src/main/java/org/example/course/resources/UserResource.java	/^    public ResponseEntity<User> findById(@PathVariable Long id) {$/;"	m	class:UserResource
 findById	src/main/java/org/example/course/services/CategoryService.java	/^    public Category findById(Long id) {$/;"	m	class:CategoryService
 findById	src/main/java/org/example/course/services/OrderService.java	/^    public Order findById(Long id) {$/;"	m	class:OrderService
 findById	src/main/java/org/example/course/services/ProductService.java	/^    public Product findById(Long id) {$/;"	m	class:ProductService
@@ -139,19 +145,24 @@ getDescription	src/main/java/org/example/course/entities/Product.java	/^    publ
 getEmail	src/main/java/org/example/course/entities/User.java	/^    public String getEmail() {$/;"	m	class:User
 getId	src/main/java/org/example/course/entities/Category.java	/^    public Long getId() {$/;"	m	class:Category
 getId	src/main/java/org/example/course/entities/Order.java	/^    public Long getId() {$/;"	m	class:Order
+getId	src/main/java/org/example/course/entities/Payment.java	/^    public Long getId() {$/;"	m	class:Payment
 getId	src/main/java/org/example/course/entities/Product.java	/^    public Long getId() {$/;"	m	class:Product
 getId	src/main/java/org/example/course/entities/User.java	/^    public Long getId() {$/;"	m	class:User
 getImgUrl	src/main/java/org/example/course/entities/Product.java	/^    public String getImgUrl() {$/;"	m	class:Product
 getItems	src/main/java/org/example/course/entities/Order.java	/^    public Set<OrderItem> getItems() {$/;"	m	class:Order
 getMoment	src/main/java/org/example/course/entities/Order.java	/^    public Instant getMoment() {$/;"	m	class:Order
+getMoment	src/main/java/org/example/course/entities/Payment.java	/^    public Instant getMoment() {$/;"	m	class:Payment
 getName	src/main/java/org/example/course/entities/Category.java	/^    public String getName() {$/;"	m	class:Category
 getName	src/main/java/org/example/course/entities/Product.java	/^    public String getName() {$/;"	m	class:Product
 getName	src/main/java/org/example/course/entities/User.java	/^    public String getName() {$/;"	m	class:User
 getOrder	src/main/java/org/example/course/entities/OrderItem.java	/^    public Order getOrder() {$/;"	m	class:OrderItem
+getOrder	src/main/java/org/example/course/entities/Payment.java	/^    public Order getOrder() {$/;"	m	class:Payment
 getOrder	src/main/java/org/example/course/entities/pk/OrderItemPK.java	/^    public Order getOrder() {$/;"	m	class:OrderItemPK
 getOrderStatus	src/main/java/org/example/course/entities/Order.java	/^    public OrderStatus getOrderStatus() {$/;"	m	class:Order
+getOrders	src/main/java/org/example/course/entities/Product.java	/^    public Set<Order> getOrders() {$/;"	m	class:Product
 getOrders	src/main/java/org/example/course/entities/User.java	/^    public List<Order> getOrders() {$/;"	m	class:User
 getPassword	src/main/java/org/example/course/entities/User.java	/^    public String getPassword() {$/;"	m	class:User
+getPayment	src/main/java/org/example/course/entities/Order.java	/^    public Payment getPayment() {$/;"	m	class:Order
 getPhone	src/main/java/org/example/course/entities/User.java	/^    public String getPhone() {$/;"	m	class:User
 getPrice	src/main/java/org/example/course/entities/OrderItem.java	/^    public Double getPrice() {$/;"	m	class:OrderItem
 getPrice	src/main/java/org/example/course/entities/Product.java	/^    public Double getPrice() {$/;"	m	class:Product
@@ -159,26 +170,35 @@ getProduct	src/main/java/org/example/course/entities/OrderItem.java	/^    public
 getProduct	src/main/java/org/example/course/entities/pk/OrderItemPK.java	/^    public Product getProduct() {$/;"	m	class:OrderItemPK
 getProducts	src/main/java/org/example/course/entities/Category.java	/^    public Set<Product> getProducts() {$/;"	m	class:Category
 getQuantity	src/main/java/org/example/course/entities/OrderItem.java	/^    public Integer getQuantity() {$/;"	m	class:OrderItem
+getSubTotal	src/main/java/org/example/course/entities/OrderItem.java	/^    public Double getSubTotal() {$/;"	m	class:OrderItem
+getTotal	src/main/java/org/example/course/entities/Order.java	/^    public Double getTotal() {$/;"	m	class:Order
 hashCode	src/main/java/org/example/course/entities/Category.java	/^    public int hashCode() {$/;"	m	class:Category
 hashCode	src/main/java/org/example/course/entities/Order.java	/^    public int hashCode() {$/;"	m	class:Order
 hashCode	src/main/java/org/example/course/entities/OrderItem.java	/^    public int hashCode() {$/;"	m	class:OrderItem
+hashCode	src/main/java/org/example/course/entities/Payment.java	/^    public int hashCode() {$/;"	m	class:Payment
 hashCode	src/main/java/org/example/course/entities/Product.java	/^    public int hashCode() {$/;"	m	class:Product
 hashCode	src/main/java/org/example/course/entities/User.java	/^    public int hashCode() {$/;"	m	class:User
 hashCode	src/main/java/org/example/course/entities/pk/OrderItemPK.java	/^    public int hashCode() {$/;"	m	class:OrderItemPK
 id	src/main/java/org/example/course/entities/Category.java	/^    private Long id;$/;"	f	class:Category	file:
 id	src/main/java/org/example/course/entities/Order.java	/^    private Long id;$/;"	f	class:Order	file:
 id	src/main/java/org/example/course/entities/OrderItem.java	/^    private OrderItemPK id = new OrderItemPK();$/;"	f	class:OrderItem	file:
+id	src/main/java/org/example/course/entities/Payment.java	/^    private Long id;$/;"	f	class:Payment	file:
 id	src/main/java/org/example/course/entities/Product.java	/^    private Long id;$/;"	f	class:Product	file:
 id	src/main/java/org/example/course/entities/User.java	/^    private Long id;$/;"	f	class:User	file:
 imgUrl	src/main/java/org/example/course/entities/Product.java	/^    private String imgUrl;$/;"	f	class:Product	file:
+insert	src/main/java/org/example/course/resources/UserResource.java	/^    public ResponseEntity<User> insert(@RequestBody User obj) {$/;"	m	class:UserResource
+insert	src/main/java/org/example/course/services/UserService.java	/^    public User insert(User obj) {$/;"	m	class:UserService
 items	src/main/java/org/example/course/entities/Order.java	/^    private Set<OrderItem> items = new HashSet<>();$/;"	f	class:Order	file:
+items	src/main/java/org/example/course/entities/Product.java	/^    private Set<OrderItem> items = new HashSet<>();$/;"	f	class:Product	file:
 java.version	pom.xml	/^        <java.version>25<\/java.version>$/;"	p
 main	src/main/java/org/example/course/CourseApplication.java	/^    public static void main(String[] args) {$/;"	m	class:CourseApplication
 moment	src/main/java/org/example/course/entities/Order.java	/^    private Instant moment;$/;"	f	class:Order	file:
+moment	src/main/java/org/example/course/entities/Payment.java	/^    private Instant moment;$/;"	f	class:Payment	file:
 name	src/main/java/org/example/course/entities/Category.java	/^    private String name;$/;"	f	class:Category	file:
 name	src/main/java/org/example/course/entities/Product.java	/^    private String name;$/;"	f	class:Product	file:
 name	src/main/java/org/example/course/entities/User.java	/^    private String name;$/;"	f	class:User	file:
 nsbbf684f00101	pom.xml	/^         xsi:schemaLocation="http:\/\/maven.apache.org\/POM\/4.0.0 https:\/\/maven.apache.org\/x/;"	n	uri:http://maven.apache.org/POM/4.0.0
+order	src/main/java/org/example/course/entities/Payment.java	/^    private Order order;$/;"	f	class:Payment	file:
 order	src/main/java/org/example/course/entities/pk/OrderItemPK.java	/^    private Order order;$/;"	f	class:OrderItemPK	file:
 orderItemRepository	src/main/java/org/example/course/config/TestConfig.java	/^    private OrderItemRepository orderItemRepository;$/;"	f	class:TestConfig	file:
 orderRepository	src/main/java/org/example/course/config/TestConfig.java	/^    private OrderRepository orderRepository;$/;"	f	class:TestConfig	file:
@@ -191,6 +211,7 @@ org.example.course.config	src/main/java/org/example/course/config/TestConfig.jav
 org.example.course.entities	src/main/java/org/example/course/entities/Category.java	/^package org.example.course.entities;$/;"	p
 org.example.course.entities	src/main/java/org/example/course/entities/Order.java	/^package org.example.course.entities;$/;"	p
 org.example.course.entities	src/main/java/org/example/course/entities/OrderItem.java	/^package org.example.course.entities;$/;"	p
+org.example.course.entities	src/main/java/org/example/course/entities/Payment.java	/^package org.example.course.entities;$/;"	p
 org.example.course.entities	src/main/java/org/example/course/entities/Product.java	/^package org.example.course.entities;$/;"	p
 org.example.course.entities	src/main/java/org/example/course/entities/User.java	/^package org.example.course.entities;$/;"	p
 org.example.course.entities.enums	src/main/java/org/example/course/entities/enums/OrderStatus.java	/^package org.example.course.entities.enums;$/;"	p
@@ -209,6 +230,7 @@ org.example.course.services	src/main/java/org/example/course/services/OrderServi
 org.example.course.services	src/main/java/org/example/course/services/ProductService.java	/^package org.example.course.services;$/;"	p
 org.example.course.services	src/main/java/org/example/course/services/UserService.java	/^package org.example.course.services;$/;"	p
 password	src/main/java/org/example/course/entities/User.java	/^    private String password;$/;"	f	class:User	file:
+payment	src/main/java/org/example/course/entities/Order.java	/^    private Payment payment;$/;"	f	class:Order	file:
 phone	src/main/java/org/example/course/entities/User.java	/^    private String phone;$/;"	f	class:User	file:
 price	src/main/java/org/example/course/entities/OrderItem.java	/^    private Double price;$/;"	f	class:OrderItem	file:
 price	src/main/java/org/example/course/entities/Product.java	/^    private Double price;$/;"	f	class:Product	file:
@@ -224,6 +246,7 @@ run	src/main/java/org/example/course/config/TestConfig.java	/^    public void ru
 serialVersionUID	src/main/java/org/example/course/entities/Category.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Category	file:
 serialVersionUID	src/main/java/org/example/course/entities/Order.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Order	file:
 serialVersionUID	src/main/java/org/example/course/entities/OrderItem.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:OrderItem	file:
+serialVersionUID	src/main/java/org/example/course/entities/Payment.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Payment	file:
 serialVersionUID	src/main/java/org/example/course/entities/Product.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:Product	file:
 serialVersionUID	src/main/java/org/example/course/entities/User.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:User	file:
 serialVersionUID	src/main/java/org/example/course/entities/pk/OrderItemPK.java	/^    private static final long serialVersionUID = 1L;$/;"	f	class:OrderItemPK	file:
@@ -236,17 +259,21 @@ setDescription	src/main/java/org/example/course/entities/Product.java	/^    publ
 setEmail	src/main/java/org/example/course/entities/User.java	/^    public void setEmail(String email) {$/;"	m	class:User
 setId	src/main/java/org/example/course/entities/Category.java	/^    public void setId(Long id) {$/;"	m	class:Category
 setId	src/main/java/org/example/course/entities/Order.java	/^    public void setId(Long id) {$/;"	m	class:Order
+setId	src/main/java/org/example/course/entities/Payment.java	/^    public void setId(Long id) {$/;"	m	class:Payment
 setId	src/main/java/org/example/course/entities/Product.java	/^    public void setId(Long id) {$/;"	m	class:Product
 setId	src/main/java/org/example/course/entities/User.java	/^    public void setId(Long id) {$/;"	m	class:User
 setImgUrl	src/main/java/org/example/course/entities/Product.java	/^    public void setImgUrl(String imgUrl) {$/;"	m	class:Product
 setMoment	src/main/java/org/example/course/entities/Order.java	/^    public void setMoment(Instant moment) {$/;"	m	class:Order
+setMoment	src/main/java/org/example/course/entities/Payment.java	/^    public void setMoment(Instant moment) {$/;"	m	class:Payment
 setName	src/main/java/org/example/course/entities/Category.java	/^    public void setName(String name) {$/;"	m	class:Category
 setName	src/main/java/org/example/course/entities/Product.java	/^    public void setName(String name) {$/;"	m	class:Product
 setName	src/main/java/org/example/course/entities/User.java	/^    public void setName(String name) {$/;"	m	class:User
 setOrder	src/main/java/org/example/course/entities/OrderItem.java	/^    public void setOrder(Order order) {$/;"	m	class:OrderItem
+setOrder	src/main/java/org/example/course/entities/Payment.java	/^    public void setOrder(Order order) {$/;"	m	class:Payment
 setOrder	src/main/java/org/example/course/entities/pk/OrderItemPK.java	/^    public void setOrder(Order order) {$/;"	m	class:OrderItemPK
 setOrderStatus	src/main/java/org/example/course/entities/Order.java	/^    public void setOrderStatus(OrderStatus orderStatus) {$/;"	m	class:Order
 setPassword	src/main/java/org/example/course/entities/User.java	/^    public void setPassword(String password) {$/;"	m	class:User
+setPayment	src/main/java/org/example/course/entities/Order.java	/^    public void setPayment(Payment payment) {$/;"	m	class:Order
 setPhone	src/main/java/org/example/course/entities/User.java	/^    public void setPhone(String phone) {$/;"	m	class:User
 setPrice	src/main/java/org/example/course/entities/OrderItem.java	/^    public void setPrice(Double price) {$/;"	m	class:OrderItem
 setPrice	src/main/java/org/example/course/entities/Product.java	/^    public void setPrice(Double price) {$/;"	m	class:Product
@@ -273,6 +300,9 @@ spring.jpa.show-sql	src/main/resources/application-test.properties	/^spring.jpa.
 spring.jpa.show-sql	target/classes/application-test.properties	/^spring.jpa.show-sql=true$/;"	k
 spring.profiles.active	src/main/resources/application.properties	/^spring.profiles.active=test$/;"	k
 spring.profiles.active	target/classes/application.properties	/^spring.profiles.active=test$/;"	k
+update	src/main/java/org/example/course/resources/UserResource.java	/^    public ResponseEntity<User> update(@PathVariable Long id, @RequestBody User obj) {$/;"	m	class:UserResource
+update	src/main/java/org/example/course/services/UserService.java	/^    public User update(Long id, User obj) {$/;"	m	class:UserService
+updateData	src/main/java/org/example/course/services/UserService.java	/^    private void updateData(User entity, User obj) {$/;"	m	class:UserService	file:
 userRepository	src/main/java/org/example/course/config/TestConfig.java	/^    private UserRepository userRepository;$/;"	f	class:TestConfig	file:
 valueOf	src/main/java/org/example/course/entities/enums/OrderStatus.java	/^    public static OrderStatus valueOf(int code) {$/;"	m	class:OrderStatus
 wrapperVersion	.mvn/wrapper/maven-wrapper.properties	/^wrapperVersion=3.3.4$/;"	k
